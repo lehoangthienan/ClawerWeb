@@ -1,0 +1,214 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Apr 12, 2018, 12:10:50 AM
+    Author     : An Le
+*/
+
+ul{
+    padding-left: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.mcard{
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    background-color: #fff;
+}
+
+body{
+    color: #666;
+}
+
+body.search{
+    background-color: #fff;
+}
+.header-container{
+    padding-top: 15px;
+    padding-right: 50%;
+    border-bottom: 1px solid #ebebeb;
+    background-color: #fafafa;
+}
+.header-container .search-container{
+    display: flex;
+}
+.header-container .logo-container {
+    flex: 0;
+    margin: 5px 40px;
+}
+.header-container .search-form {
+    flex: 1;
+}
+.logo-container{
+    margin-top: 100px;
+}
+.logo {
+    margin: auto;
+    display: block;
+}
+.search-form {
+    margin: auto;
+}
+.header-container .tab-container{
+    margin-left: 150px;
+}
+.header-container .tab-container li{
+    display: inline-block;
+}
+.header-container .tab-container li.selected{
+    border-bottom: 3px solid #1A73E8;
+    color: #1A73E8;
+    font-weight: 700;
+}
+.header-container .tab-container li a{
+    padding: 15px 10px 10px;
+    font-size: 13px;
+    color: inherit;
+    display: block;
+}
+
+#resultStats{
+    color: #808080;
+    line-height: 43px;
+    font-size: 13px;
+    margin-left: 150px;
+}
+
+.my-container{
+    margin: 10px 0;
+}
+.my-container>.row{
+    margin-left: 0;
+    margin-right: 0;
+}
+.my-container .filter {
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.my-container .filter .rating {
+    cursor: pointer;
+}
+
+.my-container .filter .form-group.row{
+    margin-left: 0;
+    margin-right: 0;
+}
+.my-container .filter .form-group.row>div{
+    padding: 0 5px 0 0;
+}
+
+.order{
+    overflow: hidden;
+    padding: 3px 8px 1px;
+}
+
+.order .form-group{
+    float: right;
+    margin: 0;
+}
+.order .form-group select{
+    display: inline-block;
+    width: auto;
+}
+
+.product-container {
+    overflow: hidden;
+    margin: 0 -10px;
+}
+.product-container .box-product {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.product-container .box-product>a{
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+.product-container .box-product .product-image img{
+    width: 100%;
+    height: calc(15vw - 30px);
+}
+.product-container .box-product .product-detail {
+    padding: 10px;
+}
+.product-container .box-product .product-detail .product-name {
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 5px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.product-container .box-product .product-detail .product-price {
+    color: #f57224;
+    font-size: 18px;
+}
+
+.rating .rating-content {
+    position: relative;
+    white-space: nowrap;
+    font-size: 11px;
+    color: #b8b8b8;
+}
+
+.rating .rating-content span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    color: #ffc120;
+}
+
+.image-container {
+    overflow: hidden;
+    text-align: center;
+}
+.image-container .image-link{
+    display: inline-block;
+}
+
+.image-container .image-link .image-image{
+    width: 150px;
+    height: 150px;
+}
+
+.loading-container{
+    text-align: center;
+    padding: 10px 0;
+}
+
+.loading-container img{
+    width: 50px;
+    height: 50px;
+}
+
+#btnLoadMoreImage{
+    margin: 30px 0;
+}
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (max-width: 767.98px) {
+    .product-container .box-product {
+        width: 50% !important;
+    }
+    .product-container .box-product .product-image img{
+        height: calc(50vw - 30px) !important;
+    }
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (max-width: 991.98px) {
+    .product-container .box-product {
+        width: 25%;
+    }
+    .product-container .box-product .product-image img{
+        height: calc(25vw - 30px);
+    }
+}
